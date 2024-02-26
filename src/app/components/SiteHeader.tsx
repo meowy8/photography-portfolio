@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import SiteTitle from "./SiteTitle";
+import Sidebar from "./Sidebar";
+
+//bg-gradient-radial from-[#045492]
 
 const SiteHeader = () => {
   return (
-    <header className='text-xl flex justify-center w-full p-2'>Micheal Hoey</header>
-  )
-}
+    <header className="flex justify-between items-center pt-4 backdrop-blur-lg bg-[#060201]">
+      <Sidebar />
+      <SiteTitle />
+    </header>
+  );
+};
 
-export default SiteHeader
+export default SiteHeader;

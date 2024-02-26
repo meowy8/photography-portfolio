@@ -10,7 +10,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside>
+    <aside className="quicksand">
       {isOpen && (
         <div
           id="sidebarBackdrop"
@@ -18,7 +18,7 @@ const Sidebar = () => {
           onClick={toggleSidebar}
         ></div>
       )}
-      <button onClick={toggleSidebar} className="">
+      <button onClick={toggleSidebar} className="pl-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -60,31 +60,37 @@ const Sidebar = () => {
             </svg>
           </button>
         </div>
-        <ul className="fixed px-4 py-10 font-semibold w-44 text-[#C2C04C] z-20">
-          <li
-            onClick={toggleSidebar}
-            className={`px-4 py-2 cursor-pointer rounded-lg ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
-            } transition-transform duration-500 ease-in-out`}
-          >
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li
-            onClick={toggleSidebar}
-            className={`px-4 py-2 cursor-pointer rounded-lg ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
-            } transition-transform duration-700 ease-in-out`}
-          >
-            <Link href={"/film"}>Film</Link>
-          </li>
-          <li
-            onClick={toggleSidebar}
-            className={`px-4 py-2 cursor-pointer rounded-lg ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
-            } transition-transform duration-1000 ease-in-out`}
-          >
-            <Link href={"/digital"}>Digital</Link>
-          </li>
+        <ul className="flex flex-col gap-4 px-4 py-10 w-44 text-[#C2C04C]">
+          <Link href={"/"}>
+            <li
+              onClick={toggleSidebar}
+              className={` px-4 py-2 cursor-pointer rounded-lg ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              } transition-transform duration-500 ease-in-out hover:bg-black`}
+            >
+              Home
+            </li>
+          </Link>
+          <Link href={"/film"}>
+            <li
+              onClick={toggleSidebar}
+              className={`px-4 py-2 cursor-pointer rounded-lg ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              } transition-transform duration-700 ease-in-out hover:bg-black`}
+            >
+              Film
+            </li>
+          </Link>
+          <Link href={"/digital"}>
+            <li
+              onClick={toggleSidebar}
+              className={`px-4 py-2 cursor-pointer rounded-lg ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              } transition-transform duration-1000 ease-in-out hover:bg-black`}
+            >
+              Digital
+            </li>
+          </Link>
         </ul>
       </nav>
     </aside>

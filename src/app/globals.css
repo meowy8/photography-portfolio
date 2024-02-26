@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/font/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
+}
+
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+}

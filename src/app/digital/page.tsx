@@ -11,9 +11,9 @@ const DigitalPage = () => {
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="bg-black w-full flex justify-center items-center">
       <div
-        className={`flex min-h-screen flex-col justify-center items-center md:flex-row flex-wrap transition-opacity duration-1000 ease-in-out ${
+        className={`flex min-h-screen flex-col justify-center items-center lg:grid grid-cols-2 transition-opacity duration-1000 ease-in-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -25,6 +25,8 @@ const DigitalPage = () => {
           alt="hand"
         />
         <PhotoFrame src="/images/R0060263.jpg" alt="spider" />
+        <PhotoFrame src="/images/25277.jpeg" alt="leaves" />
+        <PhotoFrame src="/images/25206.jpeg" alt="birds on sand" />
       </div>
     </div>
   );

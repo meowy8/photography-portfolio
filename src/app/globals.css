@@ -7,6 +7,15 @@
   src: url('/font/Quicksand/static/Quicksand-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/font/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
 .quicksand {
   font-family: 'Quicksand', sans-serif;
+}
+
+.dmSerifDisplay {
+  font-family: 'DM Serif Display', serif;
 }

@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="quicksand">
+    <aside className="quicksand z-10">
       {isOpen && (
         <div
           id="sidebarBackdrop"

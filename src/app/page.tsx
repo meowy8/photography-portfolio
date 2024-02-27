@@ -12,14 +12,14 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center h-screen bg-black quicksand">
+    <main className="h-screen bg-black quicksand">
       <div
-        className={`flex  flex-col transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
+        className={`flex flex-col w-full items-center transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 justify-end ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <Link href={"/film"} className="group">
-          <div className="flex flex-col border-8 border-black w-[600px] h-[400px] overflow-hidden">
+        <Link href={"/film"} className="group ">
+          <div className="flex flex-col border-8 border-black overflow-hidden">
             <Image
               src="/images/000003.JPG"
               alt="trees"
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </Link>
         <Link href={"/digital"} className="group">
-          <div className="flex flex-col border-8 border-black w-[600px] h-[400px] overflow-hidden">
+          <div className="flex flex-col border-8 border-black overflow-hidden">
             <Image
               src="/images/DSCF7722.jpg"
               alt="garden"

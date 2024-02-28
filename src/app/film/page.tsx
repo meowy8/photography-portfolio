@@ -10,9 +10,9 @@ const FilmPage = () => {
   }, []);
 
   return (
-    <div className="bg-black flex justify-center items-center">
+    <div className="bg-black flex justify-center items-center min-h-screen w-full">
       <div
-        className={`flex min-h-screen flex-col justify-center items-center lg:grid grid-cols-2 transition-opacity duration-1000 ease-in-out ${
+        className={`flex flex-col justify-center items-center lg:grid grid-cols-2 transition-opacity duration-1000 ease-in-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >

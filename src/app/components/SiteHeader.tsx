@@ -1,32 +1,17 @@
-"use client";
 import React, { useState } from "react";
 import SiteTitle from "./SiteTitle";
 import Sidebar from "./Sidebar";
 
-//bg-gradient-radial from-[#045492]
+//make title appear in sidebar on a large screen but in the header on a small screen
+// wrap each component of the title in a div to conditionally render it based on where it is
 
 const SiteHeader = () => {
-  const [headerGradient, setHeaderGradient] = useState<string>(
-    "bg-[#060201] bg-gradient-to-r from-[#060201]"
-  );
-
-  // maybe get rid of this
-  const toggleHeaderGradient = () => {
-    // if (headerGradient === "bg-[#060201] bg-gradient-to-r from-[#060201]") {
-    //   setHeaderGradient("bg-[#C2C04C] bg-gradient-to-r from-[#060201]");
-    // } else if (
-    //   headerGradient === "bg-[#C2C04C] bg-gradient-to-r from-[#060201]"
-    // ) {
-    //   setHeaderGradient("bg-[#060201] bg-gradient-to-r from-[#060201]");
-    // }
-  };
-
   return (
     <header
-      className={`flex justify-between items-center pt-4 ${headerGradient} transition-colors duration-500`}
+      className={`flex justify-between items-center pt-4 transition-colors duration-500 bg-black lg:hidden`}
     >
       <Sidebar />
-      <SiteTitle toggleHeaderGradient={toggleHeaderGradient} />
+      <SiteTitle />
     </header>
   );
 };

@@ -12,9 +12,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen bg-black quicksand w-full flex justify-center">
+    <main className="h-screen bg-black quicksand w-full flex justify-center lg:pt-32">
       <div
-        className={`flex flex-col items-center transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
+        className={`flex flex-col transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >

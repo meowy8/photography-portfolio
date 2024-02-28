@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import SiteTitle from "./SiteTitle";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,11 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="quicksand z-10">
+    <aside className="quicksand z-10 lg:fixed">
       {isOpen && (
         <div
           id="sidebarBackdrop"
-          className="fixed top-0 right-0 w-screen min-h-screen backdrop-blur-md lg:backdrop-blur-0"
+          className="fixed top-0 right-0 w-screen min-h-screen backdrop-blur-md lg:hidden"
           onClick={toggleSidebar}
         ></div>
       )}
@@ -36,7 +37,7 @@ const Sidebar = () => {
         </svg>
       </button>
       <nav
-        className={`fixed left-0 top-0 min-h-screen w-64 border-r-4 border-[#5E0D06] text-black z-100 ${
+        className={`fixed left-0 top-0 min-h-screen w-64 border-r-4 border-[#5E0D06] text-black lg:static ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out bg-black lg:translate-x-0`}
       >
@@ -60,6 +61,9 @@ const Sidebar = () => {
               />
             </svg>
           </button>
+        </div>
+        <div className="hidden lg:flex py-2 px-4">
+          <SiteTitle />
         </div>
         <div className="flex flex-col justify-between h-96">
           <ul className="flex flex-col gap-4 px-4 py-10 w-44 text-[#C2C04C] text-xl">

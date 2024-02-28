@@ -20,8 +20,8 @@ const FilmPage = () => {
         <PhotoFrame src="/images/000014.JPG" alt="sheep" />
         <PhotoFrame src="/images/000013.JPG" alt="skyline" />
         <PhotoFrame src="/images/000028.jpg" alt="mannequins" />
-        <PhotoFrame src="/images/IMG_2589.jpeg" alt="leaning trees" />
-        <PhotoFrame src="/images/IMG_2595.jpeg" alt="sheep" />
+        <PhotoFrame src="/images/IMG_2589.jpg" alt="leaning trees" />
+        <PhotoFrame src="/images/IMG_2589.jpg" alt="sheep" />
         <PhotoFrame src="/images/25956.jpeg" alt="dog in water" />
       </div>
     </div>

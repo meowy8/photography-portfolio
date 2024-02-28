@@ -11,7 +11,7 @@ const DigitalPage = () => {
   }, []);
 
   return (
-    <div className="bg-black w-full flex justify-center items-center">
+    <div className="w-full flex justify-center items-center">
       <div
         className={`flex min-h-screen flex-col justify-center items-center lg:grid grid-cols-2 transition-opacity duration-1000 ease-in-out ${
           isVisible ? "opacity-100" : "opacity-0"

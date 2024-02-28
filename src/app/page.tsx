@@ -12,16 +12,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen bg-black quicksand w-full flex justify-center lg:pt-32">
+    <main className="min-h-screen quicksand w-full flex justify-center lg:pt-32">
       <div
         className={`flex flex-col transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <Link href={"/film"} className="group ">
-          <div className="flex flex-col border-8 border-black overflow-hidden">
+        <Link href={"/film"} className="group">
+          <div className="flex flex-col border-8 border-black overflow-hidden ">
             <Image
-              src="/images/000003.JPG"
+              src="/images/25956.jpeg"
               alt="trees"
               width={600}
               height={600}

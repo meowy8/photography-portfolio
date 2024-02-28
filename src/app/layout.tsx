@@ -19,12 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " lg:flex min-h-screen"}>
+      <body className={inter.className + " lg:flex min-h-screen "}>
         <SiteHeader />
         <div className="hidden lg:block">
           <Sidebar />
         </div>
-        <div className="w-full lg:ml-64">{children}</div>
+        <div className="w-full bg-black lg:ml-64">{children}</div>
       </body>
     </html>
   );

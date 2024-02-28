@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen quicksand w-full flex justify-center lg:pt-32">
       <div
-        className={`flex flex-col transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
+        className={`flex flex-col lg:h-96 transition-opacity duration-1000 ease-in-out lg:grid grid-cols-2 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
